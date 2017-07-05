@@ -1,0 +1,113 @@
+body {
+	background-color: black;
+	font-family: 'Roboto',sans-serif;
+}
+
+.container {
+	width: 100%;
+}
+
+.topholder {
+	background-color: #282727;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+
+#logo {
+	padding: 10px 20px;
+	width: 64px;
+	height: 64px;
+}
+
+#menubar {
+	padding: 35 0 0 0;
+	margin: 0;
+	color: white;
+	float: right;
+	position: static;
+}
+
+#menubar a {
+	color: white;
+	opacity: 0.8;
+	text-decoration: none;
+	text-align: center;
+	padding: 50 50 50 50;
+}
+
+#menubar a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#menubar a:hover {
+	background-color: green;
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+}
+
+#menubar a:active {
+	color: white;
+	text-decoration: none;
+}
+
+.bgimageparalax {
+	padding-top: 130px;
+	background-image: url('Images/forest.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	left: 0px;
+	width: 100%;
+	height: 500px;
+}
+
+.mainholder {
+	background-color: white;
+	width: 100%;
+	color: black;
+	text-align: center;
+	display: block;
+	margin: auto;
+	top: 0px;
+	left: 0px;
+}
+
+.teamheads {
+	font-size: 50px;
+	font-weight: bold;
+	padding: 100px 0px 0px 0px;
+	text-align: center;
+}
+
+.teamtext {
+	width: 70%;
+	margin: auto;
+	padding: 100px 0px;
+}
+
+.teamtext a {
+	color: white;
+}
+
+.bottom {
+	background-color: #282727;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 20%;
+}
+
+@media screen and (max-width: 960px){
+	.bgimageparalax {width: 100%;}
+	#menubar{text-align: center; margin: auto; width: 100%; padding: 0;}
+	.topholder{display: block; margin: auto; text-align: center; height: auto; background-color: trans;}
+	#logo{margin: auto;}
+	.bgimageparalax{background-attachment: scroll; height: 50%;}
+	#menubar a {display: block; padding: 10 0 10 0; background-color: transparent;}
+}
