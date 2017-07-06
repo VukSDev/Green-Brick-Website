@@ -3,6 +3,28 @@ body {
 	font-family: 'Roboto',sans-serif;
 }
 
+.aboutcontain {
+	width: 100%;
+	text-align: center;
+}
+
+.aboutcontain img {
+}
+
+.aboutcontain_left {
+	float: left;
+	width: 50%;
+}
+
+.aboutcontain_center {
+	float: left;
+	width: 50%;
+}
+
+.abouttext {
+	text-align: center;
+}
+
 .container {
 	width: 100%;
 }
@@ -76,6 +98,7 @@ body {
 	margin: auto;
 	top: 0px;
 	left: 0px;
+	padding-bottom: 30px;
 }
 
 .teamheads {
@@ -110,4 +133,6 @@ body {
 	#logo{margin: auto;}
 	.bgimageparalax{background-attachment: scroll; height: 50%;}
 	#menubar a {display: block; padding: 10 0 10 0; background-color: transparent;}
+	.aboutcontain_center{width: 100%;}
+	.aboutcontain_left{width: 100%;}
 }
