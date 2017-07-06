@@ -11,6 +11,10 @@ body {
 .aboutcontain img {
 }
 
+.aboutcontain p {
+	padding: 30px 0 30px 0;
+}
+
 .aboutcontain_left {
 	float: left;
 	width: 50%;
