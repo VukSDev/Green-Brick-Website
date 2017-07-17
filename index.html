@@ -6,31 +6,74 @@
 <meta name="viewport" content="width=device-width">
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/uparrow.png"></button>
 <div class="container">
 	<div class="topholder">
 		<a href="http://www.greenbrickgames.com"><img id="logo" src="Images/logo.png"></a>
-		<div id="menubar">
+		<div class="topnav" id="myTopnav">
 			<a href="soa.html">SONGS OF ARCADIA</a>
-			<a href="about.html">ABOUT US</a>
-			<a href="blog.html">DEV BLOG</a>
-			<a href="contact.html">CONTACT</a>
+			<a href="blog_1.html">DEV BLOG</a>
 			<a href="press.html">PRESS KIT</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Images/menu.png"></a>
 		</div>
 	</div>
+	<div class="gamelogocontain"><div class="gamelogo"><a href="soa.html">SONGS<br/>OF<br/>ARCADIA</a></div></div>
+	<video width=100% height=auto autoplay muted loop>
+  	<source src="Videos/pan.mp4" type="video/mp4">
+	</video>
 	<div class="bgimageparalax">
 	</div>
-
-	<div class="mainholder"><div class="teamheads">OUR TEAM</div><br/><div class="teamtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae feugiat turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In non nunc odio. Mauris aliquam imperdiet faucibus. Nulla at hendrerit ipsum, nec auctor odio. Curabitur semper quam ac turpis facilisis, vitae fermentum est euismod. Sed dictum at magna a ornare.
-
-Morbi at dui ipsum. Morbi ornare purus sit amet vulputate vulputate. Ut volutpat gravida ante. Phasellus consectetur, nunc quis condimentum auctor, mi tortor fermentum orci, at molestie erat erat id enim. Pellentesque orci purus, porta at luctus non, hendrerit eget augue. Suspendisse porta tortor est, eu vulputate eros porta vel. Quisque felis lacus, blandit non tortor nec, mattis ultrices justo. Curabitur ut nulla at nisl egestas tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut diam quis ligula congue efficitur. Nam nisl erat, egestas ut vulputate vel, posuere ac orci. Nullam libero risus, pretium eu pellentesque vel, imperdiet eu ipsum. Integer gravida laoreet sem. Donec ullamcorper porta mauris ac laoreet.
-
-Morbi faucibus finibus elit, non elementum enim tempus eget. Aenean lacinia lobortis sapien vel scelerisque. Nam bibendum ligula sit amet nisl mollis, aliquam interdum metus facilisis. Maecenas aliquet nibh nunc, non malesuada neque fermentum vitae. In varius hendrerit fermentum. Aliquam vitae velit neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum arcu sem, faucibus sed velit eu, elementum convallis tortor. Etiam fermentum sed nisl vel tincidunt. Donec augue turpis, mattis in tortor vel, varius lobortis dolor. Duis blandit ipsum est, non accumsan eros ornare et. Aenean ut quam facilisis, tempor lectus at, egestas lorem.
-
-Nulla turpis urna, rhoncus tincidunt massa id, consequat rutrum tellus. Sed nec diam felis. Praesent consectetur erat quam, at pharetra nunc fermentum id. Nunc ac ligula pretium, blandit neque sit amet, iaculis odio. Pellentesque finibus nisi in ultricies rutrum. Etiam nibh elit, dapibus porttitor augue pulvinar, tempus cursus eros. Praesent vehicula mattis faucibus. Suspendisse vel sagittis justo, in fermentum velit. In aliquam sem et nulla rutrum venenatis. Praesent velit neque, condimentum euismod elementum id, placerat luctus magna. Mauris nec nunc placerat, consequat orci non, vestibulum mi. Proin commodo dignissim lorem eget porta. Cras vitae libero sed dolor elementum aliquam in at ex. Aenean ut maximus ligula, at aliquam sapien. Phasellus ut enim tincidunt quam commodo rutrum. Nam pharetra sapien sit amet molestie ultricies.
-
-Donec vel arcu ac quam dictum mollis. Aliquam volutpat tellus id malesuada facilisis. Maecenas elementum odio nisi, eu ultrices dui tincidunt vitae. Proin a laoreet leo. Fusce commodo tortor metus, sit amet tincidunt justo sagittis ut. Phasellus suscipit at enim at imperdiet. Mauris eleifend dapibus facilisis. Suspendisse potenti.</div>
+	<div class="mainholder">
+		<div class="teamheads">OUR TEAM</div>
+		<div class="aboutcontain">
+			<div class="aboutcontain_left">
+				<p><img src="Images/VukPortrait.png"><br/><h1>Vuk Spalajkovic<br/><h2>Game designer and generalist</h2></h1><br/>Vuk is currently nothing but will be a biker in the future.</p>
+				<p><img src="Images/VukPortrait.png"><br/><h1>Nevena Stanic<br/><h2>Story</h2></h1><br/>Nevena is the inventor of the geese in the garden concept.</p>
+			</div>
+			<div class="aboutcontain_center">
+				<p><img src="Images/VukPortrait.png"><br/><h1>Milica Stancevic<br/><h2>Concept and 2D artist</h2></h1><br/>Milica is a herbalist and a druid.</p>
+				<p><img src="Images/VukPortrait.png"><br/><h1>Cedomir Djordjic<br/><h2>Level design</h2></h1><br/>Cedomir used to be an orc, but now he is a blood elf and that is the main reason he can't grow a good beard.</p>
+			</div>
+		</div>
 	</div>
-	<div class="bottom"></div>
+	<div class="bottom">
+		<div class="contactbox">
+			<div class="contactbox_element"><img src="Images/mail.png">vuk@greenbrickgames.com</div>
+			<div class="contactbox_element"><a href="https://www.facebook.com/greenbrickgames"><img src="Images/facebook.png">/greenbrickgames</a></div>
+			<div class="contactbox_element"><a href="https://www.linkedin.com/company-beta/18096246"><img src="Images/linkedin.png">Green Brick Games</a></div>
+			<div class="contactbox_element"><a href="#"><img src="Images/twitter.png"></a>@greenbrickgames</div>
+			<div class="contactbox_element"><a href="#"><img src="Images/instagram.png">green_brick_games</a></div>
+		</div>
+	</div>
 </div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
 </body>
 </html>
