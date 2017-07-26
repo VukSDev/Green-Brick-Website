@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Development blog</title>
+<link rel="icon" type="image/png" href="Images/logo.png"/>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/uparrow.png"></button>
+<div class="container">
+	<div class="topholder">
+		<a href="http://www.greenbrickgames.com"><img id="logo" src="Images/logo.png"></a>
+		<div class="topnav" id="myTopnav">
+			<a href="soa.html">SONGS OF ARCADIA</a>
+			<a href="blog_1.html">DEV BLOG</a>
+			<a href="press.html">PRESS KIT</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Images/menu.png"></a>
+		</div>
+	</div>
+	<div class="bgimageparalax">
+	</div>
+	<div class="mainholder">
+		<h1>DEVELOPMENT BLOG</h1>
+		<div class="blog">
+		<div class="blogselect_side">
+			<a href="blog_intro.html">Post #1: Birth of the Green Brick</a>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="contactbox">
+			<div class="contactbox_element"><img src="Images/mail.png">vuk@greenbrickgames.com</div>
+			<div class="contactbox_element"><a href="https://www.facebook.com/greenbrickgames"><img src="Images/facebook.png">/greenbrickgames</a></div>
+			<div class="contactbox_element"><a href="https://www.linkedin.com/company-beta/18096246"><img src="Images/linkedin.png">Green Brick Games</a></div>
+			<div class="contactbox_element"><a href="https://twitter.com/GreenBrickGames"><img src="Images/twitter.png"></a>@greenbrickgames</div>
+			<div class="contactbox_element"><a href="https://www.instagram.com/green_brick_games/"><img src="Images/instagram.png">green_brick_games</a></div>
+		</div>
+	</div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

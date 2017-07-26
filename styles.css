@@ -1,5 +1,11 @@
-body {
+html,body
+{
 	background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 	font-family: 'Roboto',sans-serif;
 }
 
@@ -27,8 +33,8 @@ p {
 h1 {
 	text-align: center;
 	font-weight: bold;
-	font-size: 50;
-	padding: 50 0;
+	font-size: 40;
+	padding: 100 0 50 0;
 	margin: 0;
 }
 
@@ -133,7 +139,8 @@ h3 {
 .gamelogocontain {
 	position: absolute;
 	left: 50%;
-	top: 200;
+	top: 40vh;
+	animation: fade 2s linear;
 }
 
 .gamelogo {
@@ -155,10 +162,10 @@ h3 {
 .bgimageparalax {
 	padding-top: 130px;
 	background-image: url('Images/forest.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	left: 0px;
 	width: 100%;
 	height: 70vh;
@@ -198,7 +205,7 @@ h3 {
 .blog {
 	padding: 50 0;
 	width: 100%;
-	height: 400%;
+	display: table;
 }
 
 .blog_side {
@@ -208,11 +215,13 @@ h3 {
 	border-color: black;
 	border-right-style: solid;
 	border-width: 1px;
-	position: fixed;
 	text-align: left;
 }
 
 .blog_side_el {
+	float: left;
+	font-size: 20;
+	position: fixed;
 	width: 100%;
 	padding: 20 20 20 0;
 }
@@ -232,10 +241,14 @@ h3 {
 	background-color: green;
 }
 
-.blog_post {
+.blog_post_container {
+	width: 80%;
 	float: right;
-	width: 70%;
-	padding: 0 80;
+	height: auto;
+}
+
+.blog_post {
+	padding: 0 5%;
 }
 
 .blog_post p {
@@ -279,17 +292,9 @@ h3 {
 }
 
 .contactbox_element img {
-	width: 32;
-	height: 32;
+	width: 16;
+	height: 16;
 	padding-right: 10;
-}
-
-.linksbox {
-	width: 40%;
-	float: left;
-	background-color: white;
-	height: 200;
-	margin: 40;
 }
 
 #myBtn {
@@ -311,20 +316,26 @@ h3 {
   background-color: darkgreen;
 }
 
+@keyframes fade {
+	0% {opacity: 0;}
+	50% {opacity: .5;}
+	100%{opacity: 1;}
+}
+
 @media screen and (max-width: 960px){
 	.topnav{text-align: center; margin: auto; width: 100%; padding: 0; float: right;}
-	#logo{margin: auto;}
+	#logo{margin: 0; padding-left: 10; height: 32; width: 32;}
 	.topnav a {display: block; padding: 10 0 10 0; background-color: transparent;}
-	.bgimageparalax {width: 100%; display: block;}
+	.topnav img {height: 32; width: 32;}
+	.bgimageparalax {width: 100%; display: none; background-attachment: scroll; height: 50%;}
 	.topholder{display: block; margin: auto; text-align: center; height: auto; background-color: trans;}
-	.bgimageparalax{background-attachment: scroll; height: 50%;}
 	.aboutcontain_center{width: 100%;}
 	.aboutcontain_left{width: 100%;}
-	video {position: absolute; top: 84; width: 100%; display: none;}
-	.blog_side{width: 100%; border-right-style: none; border-bottom-style: solid; position: inherit; text-align: center;}
-	.blog_side_el{padding: 5;}
+	video {padding-top: 30; width: 100%;}
+	.blog_side{width: 100%; border-right-style: none; border-bottom-style: solid; text-align: center;}
+	.blog_side_el{padding: 5; position: inherit;}
 	.blog_side_el a{padding: 5;}
-	.blog_post{width: 100%; padding: 0;}
+	.blog_post_container{float: left; width: 100%; margin: 0;}
 	.gamelogocontain{top: 135; font-size: 10;}
 	.gamelogocontain a {font-size: 20;}
 	.contactbox{width: 100%;}
