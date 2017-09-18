@@ -5,7 +5,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 	font-family: 'Roboto',sans-serif;
 }
 
@@ -79,7 +79,8 @@ h3 {
 }
 
 .topholder {
-	background-color: #282727;
+	/*background-color: #282727;*/
+	color: white;
 	width: 100%;
 	position: fixed;
 	top: 0px;
@@ -118,11 +119,9 @@ h3 {
 	text-decoration: none;
 	text-align: center;
 	padding: 50 50 50 50;
-}
-
-.topnav a:visited {
-	color: white;
-	text-decoration: none;
+	background-color: none;
+	-webkit-transition: background-color 0.5s, opacity 0.5s;
+	transition: background-color 0.5s, opacity 0.5s;
 }
 
 .topnav a:hover {
@@ -178,7 +177,7 @@ h3 {
 .mainholder {
 	background-color: white;
 	width: 100%;
-	color: black;
+	color: #282727;
 	text-align: center;
 	display: block;
 	margin: 0;
@@ -294,30 +293,46 @@ h3 {
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 72;
+	height: 150;
 	bottom: 0;
 }
 
 .contactbox {
-	width: 40%;
-	padding: 0 30%;
+	width: 80%;
+	padding: 0 10%;
 	height: 72;
 	text-align: center;
 	background-color: #282727;
 }
 
-.contactbox_element {
-	width: 20%;
-	padding: 20 0;
+.contactbox_element_right {
+	width: 25%;
+	padding: 5 0;
 	color: white;
 	text-align: center;
 	text-decoration: none;
 	float: left;
 }
 
-.contactbox_element a {
+.contactbox_element_left {
+	width: 100%;
+	padding: 5 0;
+	text-align: right;
+	float: left;
+	color: white;
+	opacity: 0.7;
+}
+
+.contactbox_element_right a {
 	color: white;
 	text-decoration: none;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s,
+}
+
+.contactbox_element_right a:hover{
+	opacity: 1;
 }
 
 #myBtn {
@@ -357,18 +372,20 @@ h3 {
 	.aboutcontain_element{width: 100% !important;}
 	.aboutcontain_center{width: 100%;}
 	.aboutcontain_left{width: 100%;}
-	
+
 	video {padding-top: 30; width: 100%;}
 
 	.blog_side{width: 100%; border-right-style: none; border-bottom-style: solid; text-align: center;}
 	.blog_side_el{padding: 5; position: inherit;}
 	.blog_side_el a{padding: 5;}
 	.blog_post_container{float: left; width: 100%; margin: 0;}
-	
-	.bottom {height: 64px;}
-	.contactbox{width: 60%; padding: 0 20%;}
-	.contactbox_element img { width: 24px;}
-	
+
+	.bottom {height: 200px;}
+	.contactbox{width: 90%; padding: 0 5%;}
+	.contactbox_element_right{width: 25%; padding: 0;}
+	.contactbox_element_right img { width: 24px;}
+	.contactbox_element_left { width: 100px;}
+
 	.gamelogocontain {top: 50px !important;}
 	.gamelogo {margin-left: -175 !important;}
 	.gamelogocontain img {width: 350 !important;;}
@@ -388,7 +405,7 @@ h3 {
 
 @media screen and (max-width: 1200px) {
 	.aboutcontain_element{width: 50%;}
-	
+
 	.gamelogocontain {top: 50px;}
 	.gamelogo {margin-left: -256px;}
 	.gamelogocontain img {width: 512;}
